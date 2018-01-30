@@ -7,16 +7,16 @@ AS-IN Tool is a software package that predicts alternative splining rewiring eff
 AS-IN Tool depends on 2 software packages - EMBOSS and INTERPRO.
 
 
-##### EMBOSS (Direct link)[ftp://emboss.open-bio.org/pub/EMBOSS/EMBOSS-6.6.0.tar.gz]
+##### EMBOSS [Direct link](ftp://emboss.open-bio.org/pub/EMBOSS/EMBOSS-6.6.0.tar.gz)
 
-Could be downloaded from the (EMBOSS website)[ftp://emboss.sourceforge.net/download/]
+Could be downloaded from the [EMBOSS website](ftp://emboss.sourceforge.net/download/)
 In our package version 6.6.0 was used. 
 
 
 
-##### InterPro (Direct link)[ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.27-66.0/interproscan-5.27-66.0-64-bit.tar.gz]
+##### InterPro [Direct link](ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.27-66.0/interproscan-5.27-66.0-64-bit.tar.gz)
 
-Could be downloaded from the (InterPro website)[https://www.ebi.ac.uk/interpro/download.html]
+Could be downloaded from the [InterPro website](https://www.ebi.ac.uk/interpro/download.html)
 In our package version 5.27-66.0 was used.
 
 
