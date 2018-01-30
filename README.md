@@ -11,7 +11,7 @@ AS-IN Tool depends on 2 software packages - EMBOSS and INTERPRO.
 
 Direct download - ftp://emboss.open-bio.org/pub/EMBOSS/EMBOSS-6.6.0.tar.gz
 
-Could be downloaded from the [EMBOSS website](ftp://emboss.sourceforge.net/download/)
+Could be downloaded from the [EMBOSS website](http://emboss.sourceforge.net/download/)
 In our package version 6.6.0 was used. 
 
 
