@@ -37,8 +37,8 @@ E.g., to provide path for INTERPRO fill in empty space on the second line of the
 ## RUNNING
 
 To actually make predictions you would need at least 2 files:
-..*Triplets consisting of the IDs of (Main isoform, Interacting partner, Alternatively spliced isoform) in tab separated format (.tsv)
-..*Fasta file(s) with protein sequences for the aforementioned protein IDs
+⋅⋅*Triplets consisting of the IDs of (Main isoform, Interacting partner, Alternatively spliced isoform) in tab separated format (.tsv)
+⋅⋅*Fasta file(s) with protein sequences for the aforementioned protein IDs
 
 To run our tool pleas use command in format
 
