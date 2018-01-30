@@ -1,6 +1,6 @@
 # AS-IN Tool
 
-AS-IN Tool is a software package that predicts alternative splining rewiring effects. This tool should be used with Python 2.7. [Ancaonda](https://anaconda.org/anaconda/python) distriburion is recommended.
+AS-IN Tool is a software package that predicts alternative splining rewiring effects. This tool should be used with Python 2.7. [Anaconda](https://anaconda.org/anaconda/python) distriburion is recommended.
 
 ## INSTALLATION
 
