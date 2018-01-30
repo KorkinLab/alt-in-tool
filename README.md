@@ -1,6 +1,6 @@
 # AS-IN Tool
 
-AS-IN Tool is a software package that predicts alternative splining rewiring effects.
+AS-IN Tool is a software package that predicts alternative splining rewiring effects. This tool should be used with Python 2.7
 
 ## INSTALLATION
 
