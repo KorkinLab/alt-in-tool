@@ -11,8 +11,7 @@ AS-IN Tool depends on 2 software packages - EMBOSS and INTERPRO.
 
 Direct download - ftp://emboss.open-bio.org/pub/EMBOSS/EMBOSS-6.6.0.tar.gz
 
-Could be downloaded from the [EMBOSS website](http://emboss.sourceforge.net/download/)
-In our package version 6.6.0 was used. 
+Could be downloaded from the [EMBOSS website](http://emboss.sourceforge.net/download/). In our package version 6.6.0 was used. 
 
 
 
@@ -20,8 +19,7 @@ In our package version 6.6.0 was used.
 
 Direct download - ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.27-66.0/interproscan-5.27-66.0-64-bit.tar.gz
 
-Could be downloaded from the [InterPro website](https://www.ebi.ac.uk/interpro/download.html)
-In our package version 5.27-66.0 was used.
+Could be downloaded from the [InterPro website](https://www.ebi.ac.uk/interpro/download.html). In our package version 5.27-66.0 was used.
 
 
 ## CONFIGURING
