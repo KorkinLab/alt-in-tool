@@ -1,24 +1,26 @@
+#H1 AS-IN Tool
+
 AS-IN Tool is a software package that predicts alternative splining rewiring effects.
 
-======= INSTALLATION ==========
+#H2 INSTALLATION
 
 AS-IN Tool depends on 2 software packages - EMBOSS and INTERPRO.
 
 
-EMBOSS (Direct link - ftp://emboss.open-bio.org/pub/EMBOSS/EMBOSS-6.6.0.tar.gz)
+#H5 EMBOSS (Direct link)[ftp://emboss.open-bio.org/pub/EMBOSS/EMBOSS-6.6.0.tar.gz]
 
-Could be downloaded from the http://emboss.sourceforge.net/download/
+Could be downloaded from the (EMBOSS website)[ftp://emboss.sourceforge.net/download/]
 In our package version 6.6.0 was used. 
 
 
 
-INTERPRO (Direct link - ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.27-66.0/interproscan-5.27-66.0-64-bit.tar.gz)
+#H5 InterPro (Direct link)[ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.27-66.0/interproscan-5.27-66.0-64-bit.tar.gz]
 
-Could be downloaded from the https://www.ebi.ac.uk/interpro/download.html
+Could be downloaded from the (InterPro website)[https://www.ebi.ac.uk/interpro/download.html]
 In our package version 5.27-66.0 was used.
 
 
-====== CONFIGURING ============
+#H2 CONFIGURING
 
 We require two files to be accessible - pepstat from EMBOSS and insterproscan.sh from INTERPRO.
 If they are in the system path (i.e., accessible from the command line), no further actions required.
@@ -28,11 +30,11 @@ E.g., to provide path for INTERPRO fill in empty space on the second line of the
  INTERPRO_PATH='~/Downloads/interproscan-5.27-66.0'
 
 
-====== RUNNING =================
+#H2 RUNNING
 
 To actually make predictions you would need at least 2 files:
-	- Triplets consisting of the IDs of (Main isoform, Interacting partner, Alternatively spliced isoform) in tab separated format (.tsv)
-	- Fasta file(s) with protein sequences for the aforementioned protein IDs
+..*Triplets consisting of the IDs of (Main isoform, Interacting partner, Alternatively spliced isoform) in tab separated format (.tsv)
+..*Fasta file(s) with protein sequences for the aforementioned protein IDs
 
 To run our tool pleas use command in format
 
@@ -42,7 +44,6 @@ E.g., to run our test data you can use command
 
 	python asintool.py test/interactors.tsv test/results.txt test/diabetes_ensembl_protein.fa test/string_protein.fa
 
-
-====== SUPPORT =================
+#H2 SUPPORT
 
 For questions, please email to the onarykov@wpi.edu
