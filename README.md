@@ -1,10 +1,10 @@
 # ALT-IN Tool
 
-AS-IN Tool is a software package that predicts alternative splining rewiring effects. This tool should be used with Python 2.7. [Anaconda](https://anaconda.org/anaconda/python) distriburion is recommended.
+ALT-IN Tool is a software package that predicts alternative splining rewiring effects. This tool should be used with Python 2.7. [Anaconda](https://anaconda.org/anaconda/python) distriburion is recommended.
 
 ## INSTALLATION
 
-AS-IN Tool depends on 2 software packages - EMBOSS and INTERPRO.
+ALT-IN Tool depends on 2 software packages - EMBOSS and INTERPRO.
 
 
 ##### EMBOSS 
@@ -38,13 +38,13 @@ To actually make predictions you would need at least 2 files:
 * Triplets consisting of the IDs of (Main isoform, Interacting partner, Alternatively spliced isoform) in tab separated format (.tsv)
 * Fasta file(s) with protein sequences for the aforementioned protein IDs
 
-To run our tool pleas use command in format
+To run our tool please use command in format
 
 	python [interactors_file.tsv] [output_file] [fasta_file_1, fasta_file_2, ...]
 
 E.g., to run our test data you can use command
 
-	python asintool.py test/interactors.tsv test/results.txt test/diabetes_ensembl_protein.fa test/string_protein.fa
+	python altintool.py test/interactors.tsv test/results.txt test/diabetes_ensembl_protein.fa test/string_protein.fa
 
 ## SUPPORT
 
