@@ -40,7 +40,7 @@ To actually make predictions you would need at least 2 files:
 
 To run our tool please use command in format
 
-	python [interactors_file.tsv] [output_file] [fasta_file_1, fasta_file_2, ...]
+	python altintool.py [interactors_file.tsv] [output_file] [fasta_file_1, fasta_file_2, ...]
 
 E.g., to run our test data you can use command
 
