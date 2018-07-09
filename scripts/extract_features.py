@@ -32,12 +32,18 @@ class Config:
 	def __init__(self, config_path):
 		config_file = open(config_path)
 		emboss_line = config_file.readline()
+		
 		self.emboss_path_ = emboss_line.split('=')[-1].split('\'')[1]
+		if self.emboss_path_ == '':
+		    self.emboss_path_ = os.environ['EMBOSS_PATH']
 		if len(self.emboss_path_) > 0:
 			if self.emboss_path_[-1] != '\\' or self.emboss_path_[-1] != '/':
 				self.emboss_path_ += '/'
+		   
 		interpro_line = config_file.readline()
 		self.interpro_path_ = interpro_line.split('=')[-1].split('\'')[1]
+		if self.interpro_path_ == '':
+		    self.interpro_path_ = os.environ['INTERPRO_PATH']
 		if len(self.interpro_path_) > 0:
 			if self.interpro_path_[-1] != '\\' or self.interpro_path_[-1] != '/':
 				self.interpro_path_ += '/'
