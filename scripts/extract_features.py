@@ -57,9 +57,10 @@ def runpepstats(seq, config):
 	f = open(fileloc, 'w+')
 	f.write(seq)
 	f.close()
-	#print 'Running pepstats ...'
-	os.system("{}pepstats -sequence ".format(config.emboss_path_)+fileloc+" -outfile "+outfile+" -auto") 
-	#print 'Pepstats finished'
+	print 'Running pepstats ...'
+	pepstats_msg = os.popen("{}pepstats -sequence ".format(config.emboss_path_)+fileloc+" -outfile "+outfile+" -auto").read()
+	print pepstats_msg
+	print 'Pepstats finished'
 	return outfile
 
 #Parse one amino acid pepstats output for matrix
@@ -320,8 +321,11 @@ def extract_new_features(main_iso_seq, inter_seq, isoform_seq, config):
 
 def extract_features(main_sequence, interactor_sequence, isoform_sequence, config):
 	#print 'Extract features'
+	make_fasta(main_sequence)
 	biochemical_main = extract_biochemical_features(main_sequence, config)
+	make_fasta(interactor_sequence)
 	biochemical_interactor = extract_biochemical_features(interactor_sequence, config)
+	make_fasta(isoform_sequence)
 	biochemical_isoform	= extract_biochemical_features(isoform_sequence, config)
 	new_features = extract_new_features(main_iso_seq, interactor_seq, isoform_seq, config)
 	#print biochemical_main
@@ -344,14 +348,16 @@ if __name__ == "__main__":
 	interactor_seq = sys.argv[2]
 	isoform_seq = sys.argv[3]
 	#os.chdir('..')
-	try:
-		os.system('rm -r temp')
-	except:
-		pass
-	try:
-		os.system('rm tmp/*')
-	except:
-		pass
+	if not os.path.isdir('./tmp'):
+		os.system("mkdir tmp")
+	#try:
+	#	os.system('rm -r temp')
+	#except:
+	#	pass
+	#try:
+	#	os.system('rm tmp/*')
+	#except:
+	#	pass
 	features = extract_features(main_iso_seq, interactor_seq, isoform_seq, config)
 	os.system('rm -r temp')
 	os.system('rm tmp/*')
