@@ -8,6 +8,16 @@ import pickle
 import sklearn as sk
 from sklearn.externals import joblib
 from semi_supervised import SemiSupervisedRF as ssrf
+import pkg_resources
+from pkg_resources import DistributionNotFound, VersionConflict
+
+dependencies = [
+	'pandas',
+	'numpy',
+	'scipy',
+	'sklearn',
+	'biopython'
+]
 
 def merge_two_dicts(x, y):
     z = x.copy()   # start with x's keys and values
@@ -56,6 +66,7 @@ def predict(main_iso, interactor, isoform, fasta, clf):
 	return interaction[0]
 
 if __name__ == "__main__":
+	#pkg_resources.require(dependencies)
 	interactors_file = sys.argv[1]
 	output = sys.argv[2]
 	fasta_files = []

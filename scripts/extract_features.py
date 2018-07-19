@@ -28,6 +28,7 @@ def align(main_iso_seq, isoform_seq, ratio):
 class Config:
 	emboss_path_ = ''
 	interpro_path_ = ''
+	INTERPRO_STUB_ = False
 
 	def __init__(self, config_path):
 		config_file = open(config_path)
@@ -47,6 +48,8 @@ class Config:
 		if len(self.interpro_path_) > 0:
 			if self.interpro_path_[-1] != '\\' or self.interpro_path_[-1] != '/':
 				self.interpro_path_ += '/'
+		if self.interpro_path_ == 'test' or self.interpro_path_ == 'test/':
+			self.INTERPRO_STUB_ = True
 		print "EMBOSS PATH: {}".format(self.emboss_path_)
 		print "INTERPRO PATH: {}".format(self.interpro_path_)
 
@@ -193,6 +196,9 @@ def extract_interpro(seq, output_file, config):
 	#interproscan.sh -i [input fasta file] --output-file-base [file base for output] -f tsv --disable-precalc -appl SUPERFAMILY-1.75	
 
 def extract_domains(seq, config):
+	if config.INTERPRO_STUB_:
+		print 'Skipping interpro...'
+		return {}, {}
 	#main_iso_interpro = 'tmp/main_iso.interpro'
 	isoform_interpro = 'tmp/iso.interpro'
 	#extract_interpro(main_iso_seq, main_iso_interpro)
