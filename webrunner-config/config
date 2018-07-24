@@ -1,0 +1,12 @@
+{
+	"config": 
+	{
+		"tool":"alt-in", 
+		"tool-dir":"../", 
+		"executor":"python", 
+		"runfile":"altintool.py", 
+		"input-file-names":["interactors.tsv", "fasta1.fa", "fasta2.fa"], 
+		"output-file-names":["results.txt"], 
+		"input-dir":"test"
+	}
+}

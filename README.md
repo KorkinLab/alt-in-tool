@@ -40,11 +40,11 @@ To actually make predictions you would need at least 2 files:
 
 To run our tool please use command in format
 
-	python altintool.py [interactors_file.tsv] [output_file] [fasta_file_1, fasta_file_2, ...]
+	python altintool.py [interactors_file.tsv] [fasta_file_1, fasta_file_2, ...] [output_file]
 
 E.g., to run our test data you can use command
 
-	python altintool.py test/interactors.tsv test/results.txt test/diabetes_ensembl_protein.fa test/string_protein.fa
+	python altintool.py test/interactors.tsv test/diabetes_ensembl_protein.fa test/string_protein.fa test/results.txt
 
 ## SUPPORT
 

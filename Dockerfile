@@ -49,9 +49,17 @@ COPY . .
 #FROM python:2.7-slim
 #
 # Installing ALT-IN Tool dependencies
-WORKDIR /altintool
-ADD . /altintool
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
+
+# Installing Web-Runner
+RUN git clone https://github.com/AlexandrNP/web-runner.git
+RUN pip install --trusted-host pypi.python.org -r web-runner/requirements.txt
+COPY webrunner-config/config web-runner/config
+WORKDIR /web-runner
+
+
+# Run server
+#CMD ["./app.py"]
 
 #Test run
 #CMD ["python", "altintool.py", "test/interactors.tsv", "test/results.txt", "test/diabetes_ensembl_protein.fa", "test/string_protein.fa"]

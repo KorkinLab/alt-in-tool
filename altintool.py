@@ -68,12 +68,12 @@ def predict(main_iso, interactor, isoform, fasta, clf):
 if __name__ == "__main__":
 	#pkg_resources.require(dependencies)
 	interactors_file = sys.argv[1]
-	output = sys.argv[2]
+	output = sys.argv[-1]
 	fasta_files = []
 	if len(sys.argv) > 4:
-		fasta_files = sys.argv[3:]
+		fasta_files = sys.argv[2:-1]
 	else:
-		fasta_files = [sys.argv[3]]
+		fasta_files = [sys.argv[2]]
 	fasta = parse_fasta(fasta_files)	
 	interactors = pd.read_csv(interactors_file, sep='\t', header=0)
 	clf = joblib.load('models/semi-supervised-rf.pkl') 
