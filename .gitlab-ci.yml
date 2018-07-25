@@ -1,0 +1,11 @@
+stages:
+- release
+
+dockerify:
+  stage: release
+  script:
+  - docker build -t narykov/alt-in .
+  - docker login -u $DOCKER_USER -p $DOCKER_PASS
+  - docker push narykov/alt-in
+  tags:
+  - shell
