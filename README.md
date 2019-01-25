@@ -7,7 +7,9 @@ ALT-IN Tool is a software package that predicts alternative splining rewiring ef
 For the latest version of ALT-IN Tool with all dependencies please consider using docker image. You would be able to run exaple simply by executing the following commands:
 
  > docker run -it narykov/alt-in:latest bash
+ 
  > cd ..
+ 
  > python altintool.py test/interactors.tsv test/diabetes_ensembl_protein.fa test/string_protein.fa test/results.txt
 
 
