@@ -4,7 +4,7 @@ ALT-IN Tool is a software package that predicts alternative splining rewiring ef
 
 ## INSTALLATION
 
-For the latest version of ALT-IN Tool with all dependencies please consider using docker image. You would be able to run exaple simply by executing the following commands:
+For the latest version of ALT-IN Tool with all dependencies please consider using docker image. The only requirement is instlled Docker. You would be able to run exaple just by executing the following commands (no additional downloads required):
 
  > docker run -it narykov/alt-in:latest bash
  
