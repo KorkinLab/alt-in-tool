@@ -38,9 +38,13 @@ Direct download - ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.27-66.0/inte
 
 Could be downloaded from the [InterPro website](https://www.ebi.ac.uk/interpro/download.html). In our package version 5.27-66.0 was used.
 
-###### CONFIGURING
 
-We require two files to be accessible - pepstat from EMBOSS and insterproscan.sh from INTERPRO.
+
+## CONFIGURATION
+
+You would need this step only if you want to change sequence alignment (currently EMBOSS implementation is used) or domain detection (currently performed by SUPERFAMILY).
+
+We require two files to be accessible - pepstat from EMBOSS and ass3.pl from SUPERFAMILY.
 If they are in the system path (i.e., accessible from the command line), no further actions required.
 
 For each package that you cannot access from command line fill in corresponding line in 'config' file.
@@ -61,18 +65,6 @@ To run our tool please use command in format
 E.g., to run our test data you can use command
 
 	python altintool.py test/interactors.tsv test/diabetes_ensembl_protein.fa test/string_protein.fa test/results.txt
-
-
-## CONFIGURATION
-
-You would need this step only if you want to change sequence alignment (currently EMBOSS implementation is used) or domain detection (currently performed by SUPERFAMILY).
-
-We require two files to be accessible - pepstat from EMBOSS and ass3.pl from SUPERFAMILY.
-If they are in the system path (i.e., accessible from the command line), no further actions required.
-
-For each package that you cannot access from command line fill in corresponding line in 'config' file.
-E.g., to provide path for INTERPRO fill in empty space on the second line of the file:
- INTERPRO_PATH='~/Downloads/interproscan-5.27-66.0'
 
 
 ## SUPPORT
