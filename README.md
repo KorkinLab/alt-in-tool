@@ -40,7 +40,7 @@ Could be downloaded from the [InterPro website](https://www.ebi.ac.uk/interpro/d
 
 
 
-## CONFIGURATION
+#### CONFIGURATION
 
 You would need this step only if you want to change sequence alignment (currently EMBOSS implementation is used) or domain detection (currently performed by SUPERFAMILY).
 
