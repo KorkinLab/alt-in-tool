@@ -333,7 +333,7 @@ def extract_features(main_sequence, interactor_sequence, isoform_sequence, confi
 	biochemical_interactor = extract_biochemical_features(interactor_sequence, config)
 	make_fasta(isoform_sequence)
 	biochemical_isoform	= extract_biochemical_features(isoform_sequence, config)
-	new_features = extract_new_features(main_iso_seq, interactor_seq, isoform_seq, config)
+	new_features = extract_new_features(main_sequence, interactor_sequence, isoform_sequence, config)
 	#print biochemical_main
 
 
