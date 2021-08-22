@@ -2,7 +2,7 @@ FROM ubuntu:xenial
 LABEL maintainer "onarykov@wpi.edu"
 
 RUN apt-get update && apt-get upgrade -y -q && apt-get install -y -q \
-    software-properties-common \
+	software-properties-common \
 	wget git python-software-properties debconf-utils
 RUN export LANG=en_US.UTF-8
 
@@ -20,8 +20,8 @@ RUN export LANG=en_US.UTF-8
 
 # Install InterProScan
 #RUN wget ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.27-66.0/interproscan-5.27-66.0-64-bit.tar.gz
-	#wget ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.27-66.0/interproscan-5.27-66.0-64-bit.tar.gz.md5 && \
-	#md5sum -c interproscan-5.27-66.0-64-bit.tar.gz
+#wget ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.27-66.0/interproscan-5.27-66.0-64-bit.tar.gz.md5 && \
+#md5sum -c interproscan-5.27-66.0-64-bit.tar.gz
 #RUN tar -xvzf interproscan-5.27-66.0-64-bit.tar.gz
 #ENV INTERPRO_PATH=/interproscan-5.27-66.0
 ENV INTERPRO_PATH=test
