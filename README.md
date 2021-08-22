@@ -12,8 +12,8 @@ and has a convenient interface (altin_docker.py)
 
 #### DOCKER INTERFACE
 
-The ONLY file you would need to run Docker image is **altin_docker.py**.
-The prerequisite is existing Docker installation, the image would be downloaded automatically. You would be able to run example just by executing the following commands:
+The ONLY script file you would need to run Docker image is **altin_docker.py**.
+The prerequisite is existing Docker installation (the image would be downloaded automatically), and example data files. You would be able to run example just by executing the following commands:
 
  > python3 altin_docker.py -i test/interactors.tsv -o res.txt -f test/diabetes_ensembl_protein.fa test/string_protein.fa
 
