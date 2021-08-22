@@ -5,6 +5,7 @@ ALT-IN is the instrument for predicting disruptions in protein-protein interacti
 We recommend usage of Docker version of our tool which is available on DockerHub repository (https://hub.docker.com/r/narykov/alt-in)
 and has a convenient interface (altin_docker.py)
 
+[![DOI](https://zenodo.org/badge/150632845.svg)](https://zenodo.org/badge/latestdoi/150632845)
 
 ## INSTALLATION
 -------
